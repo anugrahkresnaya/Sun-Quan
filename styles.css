@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+nav li {
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+    width: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav img {
+    float: left;
+    height: auto;
+    width: 70px;
+    background-color: yellow;
+}
+
+nav ul {
+    background-color: yellow;
+}
+
+nav li a {
+    background-color: yellow;
+}
+
+.h2-center, form {
+    text-align: center;
+}
+
+#email {
+    padding: 0.5em 1.25em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+#video {
+    text-align: center;
+}
+
+.yt-video {
+    margin: 0px auto 25px;
+}
+
+.h2-center {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* float three column side by side */
+.card-column {
+    float: left;
+    flex-direction: column;
+    width: 33%;
+    padding: 0 33px 75px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    border: 1px solid black;
+    text-align: center;
+    transition: transform .3s;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1.25em;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+    background-color: yellow;
+}
+
+footer {
+    text-align: center;
+    background-color: black !important;
+    color: whitesmoke;
+    clear: left;
+    padding: 10px 3px 5px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.footer-content .desc {
+    text-align: left;
+    padding: 25px;
+}
+
+.footer-content .desc p {
+    text-align: justify;
+}
+
+.footer-content ul {
+    display: flex;
+    justify-content: left;
+    padding-top: 15px;
+}
+.footer-content li {
+    padding: 0px 15px;
+}
+
+.footer-content a {
+    color: whitesmoke;
+    transition: all .5s ease;
+}
+
+.footer-content p {
+    max-width: 300px;
+}
+
+.footer-content i {
+    padding-right: 5px;
+}
+
+.footer-content a:hover {
+    color: yellow;
+}
+
+.footer-content .contact {
+    text-align: left;
+}
+
+.footer-content .contact h2 {
+    padding-top: 25px;
+}
+
+.footer-content .contact span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#second {
+    margin-left: 3px;
+}
+
+.footer-content .contact li {
+    padding-left: 0px;
+}
+
+.footer-content .contact ul {
+    display: block;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.footer-content .loc {
+    text-align: left;
+}
+
+.footer-content .loc h2 {
+    padding-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-column {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon {
+        padding: 20px 0px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact, .loc {
+        padding-left: 25px;
+    }
+
+    .cr {
+        padding-top: 25px;
+    }
+}
