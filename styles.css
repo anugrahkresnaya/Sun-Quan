@@ -148,7 +148,7 @@ a {
     padding: 25px;
 }
 
-.footer-content .desc p {
+.desc p {
     text-align: justify;
 }
 
@@ -246,5 +246,56 @@ a {
 
     .cr {
         padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-column {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon {
+        padding: 20px 0px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .desc, .contact, .loc {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    h2, span, p {
+        text-align: center !important;
+    }
+
+    .footer-content ul {
+        justify-content: center !important;
+    }
+
+    .cr {
+        padding-top: 25px;
+    }
+
+    iframe {
+        width: 375px;
+        height: 200px;
+    }
+
+    .card {
+        width: 75%;
+        margin-left: 13%;
     }
 }
