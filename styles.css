@@ -213,6 +213,10 @@ a {
     padding-top: 25px;
 }
 
+.footer-content .loc span {
+    max-width: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .card-column {
         width: 100%;
