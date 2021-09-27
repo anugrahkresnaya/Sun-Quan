@@ -290,12 +290,17 @@ a {
     }
 
     iframe {
-        width: 375px;
-        height: 200px;
+        width: 325px;
+        height: 175px;
     }
 
     .card {
         width: 75%;
         margin-left: 13%;
+    }
+
+    #about p {
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
